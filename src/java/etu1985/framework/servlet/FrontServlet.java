@@ -21,8 +21,8 @@ import java.util.HashMap;
  *
  * @author itu
  */
-@WebServlet(name = "frontservlet_1", urlPatterns = {"/frontservlet_1"})
-public class frontservlet extends HttpServlet {
+@WebServlet(name = "frontservlet_1")
+public class FrontServlet extends HttpServlet {
     HashMap<String,Mapping> mappingUrls;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -38,14 +38,14 @@ public class frontservlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            init();
+            // init();
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet frontservlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet frontservlet at " + getNameServlet(request,out) + "</h1>");
+            out.println("<h1>Servlet Name " + getNameServlet(request,out) + "</h1>");
             out.println("</body>");
             out.println("</html>");
               
@@ -63,10 +63,10 @@ public class frontservlet extends HttpServlet {
 //    }
     
     private String getNameServlet(HttpServletRequest request,PrintWriter out){
-         String uri = request.getRequestURI();
+        String uri = request.getRequestURI();
         String context = request.getContextPath();
         String[] uriParts = uri.split(context);
-        out.print("Path: uri "+uri);
+        out.print("uri "+uri);
         if (uriParts.length > 1) {
             return uriParts[1];
         } else {
