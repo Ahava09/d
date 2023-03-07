@@ -20,6 +20,7 @@ import jakarta.servlet.ServletConfig;
  */
 @WebServlet(name = "frontservlet_1", urlPatterns = {"/frontservlet_1"})
 public class frontservlet extends HttpServlet {
+    HashMap<String,Mapping> mappingUrls;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
