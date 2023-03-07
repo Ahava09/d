@@ -66,7 +66,7 @@ public class FrontServlet extends HttpServlet {
         String uri = request.getRequestURI();
         String context = request.getContextPath();
         String[] uriParts = uri.split(context);
-        out.print("uri "+uri);
+        out.print("uri:  "+uri);
         if (uriParts.length > 1) {
             return uriParts[1];
         } else {
