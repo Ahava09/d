@@ -3,7 +3,7 @@
     
     <servlet>
         <servlet-name>frontservlet</servlet-name>
-        <servlet-class>controller.frontservlet</servlet-class>
+        <servlet-class>etu1985.framework.frontservlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>frontservlet</servlet-name>
