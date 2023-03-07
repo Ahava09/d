@@ -5,6 +5,7 @@
  */
 package etu1985.framework.servlet;
 
+import etu1985.framework.Mapping;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -13,6 +14,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.ServletConfig;
+import java.util.HashMap;
+
 
 /**
  *
